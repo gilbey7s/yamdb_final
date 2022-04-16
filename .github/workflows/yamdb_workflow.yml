@@ -46,6 +46,7 @@ jobs:
           context: ./api_yamdb
           push: true
           tags: gilbey7s/api_yamdb:latest
+
   deploy:
     runs-on: ubuntu-latest
     needs: build_and_push_to_docker_hub
@@ -57,9 +58,10 @@ jobs:
         username: ${{ secrets.SERVER_USER }}
         key: ${{ secrets.SSH_KEY }}
         script: |
-          sudo docker pull gilbey7s/API_YAMDB:latest
+          sudo docker pull gilbey7s/api_yamdb:latest
           sudo docker stop $(sudo docker ps -a -q)
-          sudo docker run --rm -d -p 8000:8000 gilbey7s/API_YAMDB
+          sudo docker run --rm -d -p 8000:8000 gilbey7s/api_yamdb
+
   send_message:
     runs-on: ubuntu-latest
     needs: deploy
