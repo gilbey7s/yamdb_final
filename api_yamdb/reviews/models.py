@@ -5,7 +5,6 @@ from django.db.models import UniqueConstraint
 
 from .validators import validate_me
 
-
 USER = "user"
 MODERATOR = "moderator"
 ADMIN = "admin"

@@ -4,7 +4,6 @@ from rest_framework.routers import DefaultRouter
 from .views import (APIgetToken, APIsignup, CategoryViewSet, CommentViewSet,
                     GenreViewSet, ReviewViewSet, TitleViewSet, UserViewSet)
 
-
 router_v1 = DefaultRouter()
 
 app_name = 'api'
