@@ -1,4 +1,4 @@
-name: API_YAMBD
+name: API_YAMDB
 
 on: [push]
 
