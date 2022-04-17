@@ -58,7 +58,6 @@ jobs:
         username: ${{ secrets.SERVER_USER }}
         key: ${{ secrets.SSH_KEY }}
         script: |
-          sudo docker pull gilbey7s/api_yamdb:latest
           sudo docker-compose stop
           sudo docker-compose rm web
           touch .env
