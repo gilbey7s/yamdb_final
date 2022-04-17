@@ -9,7 +9,7 @@ services:
       - ./.env
 
   web:
-    image: gilbey7s/API_YAMDB:latest
+    image: gilbey7s/api_yamdb:latest
     volumes:
       - static_value:/app/static/
       - media_value:/app/media/
