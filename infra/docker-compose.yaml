@@ -6,7 +6,7 @@ services:
     volumes:
       - /var/lib/postgresql/data/
     env_file:
-      - ../.env
+      - .env
 
   web:
     image: gilbey7s/API_YAMDB:latest
