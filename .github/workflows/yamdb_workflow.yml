@@ -58,6 +58,7 @@ jobs:
         username: ${{ secrets.SERVER_USER }}
         key: ${{ secrets.SSH_KEY }}
         script: |
+          cd gilbey7s
           sudo docker-compose stop
           sudo docker-compose rm web
           touch .env
